@@ -533,7 +533,7 @@ async def start(bot, m: Message):
             f"Use button : **✨ Commands** to get started 🌟\n\n"
             f"If you face any problem contact -  [{CREDIT}⁬](tg://openmessage?user_id={OWNER})\n", disable_web_page_preview=True, reply_markup=keyboard
         )
-    else:
+else:
         await asyncio.sleep(2)
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("✨ Commands", callback_data="cmd_command")],
